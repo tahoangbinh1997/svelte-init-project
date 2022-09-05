@@ -10,7 +10,7 @@
     "prepare": "husky install",
     "generate": "graphql-codegen",
     "format": "prettier --write \"{public,src}/**/*.{css,html,js,ts,tsx,svelte}\"",
-    "lint": "eslint \"./src/**/*.{js,ts,tsx,svelte}\"",
+    "lint": "eslint --max-warnings=0 \"./src/**/*.{js,ts,tsx,svelte}\"",
     "lint:fix": "eslint --fix \"./src/**/*.{js,ts,tsx,svelte}\""
   },
   "devDependencies": {
@@ -22,7 +22,7 @@
     "@tsconfig/svelte": "^2.0.0",
     "babel-core": "6.26.3",
     "babel-eslint": "^10.1.0",
-    "eslint": "^8.23.0",
+    "eslint": "^7.32.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-svelte3": "^4.0.0",
     "graphql-codegen-svelte-apollo": "^1.1.0",
@@ -43,8 +43,8 @@
     "typescript": "^4.0.0"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.36.1",
-    "@typescript-eslint/parser": "^5.36.1",
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
     "autoprefixer": "^10.4.8",
     "babel-eslint": "^10.1.0",
     "elizabot": "^0.0.3",
