@@ -7,11 +7,11 @@
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear",
     "check": "svelte-check --tsconfig ./tsconfig.json",
+    "prepare": "husky install",
     "generate": "graphql-codegen",
     "format": "prettier --write \"{public,src}/**/*.{css,html,js,ts,tsx,svelte}\"",
     "lint": "eslint \"./src/**/*.{js,ts,tsx,svelte}\"",
     "lint:fix": "eslint --fix \"./src/**/*.{js,ts,tsx,svelte}\""
-    
   },
   "devDependencies": {
     "@graphql-codegen/typescript": "^2.7.3",
