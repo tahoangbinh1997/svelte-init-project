@@ -10,11 +10,8 @@
     "generate": "graphql-codegen",
     "format": "prettier --write \"{public,src}/**/*.{css,html,js,ts,tsx,svelte}\"",
     "lint": "eslint \"./src/**/*.{js,ts,tsx,svelte}\"",
-    "lint:fix": "eslint --fix --quiet src --ext .js,.ts,.tsx,.svelte"
+    "lint:fix": "eslint --fix \"./src/**/*.{js,ts,tsx,svelte}\""
     
-  },
-  "lint-staged": {
-    "*.{js,ts,svelte}": ["svelte-check", "npm run lint:fix"]
   },
   "devDependencies": {
     "@graphql-codegen/typescript": "^2.7.3",
