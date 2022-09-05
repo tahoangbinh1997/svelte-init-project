@@ -1,0 +1,60 @@
+{
+  "name": "svelte-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public --no-clear",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "generate": "graphql-codegen",
+    "format": "prettier --write \"{public,src}/**/*.{css,html,js,ts,tsx,svelte}\"",
+    "lint": "eslint \"./src/**/*.{js,ts,tsx,svelte}\"",
+    "lint:fix": "eslint --fix --quiet src --ext .js,.ts,.tsx,.svelte"
+    
+  },
+  "lint-staged": {
+    "*.{js,ts,svelte}": ["svelte-check", "npm run lint:fix"]
+  },
+  "devDependencies": {
+    "@graphql-codegen/typescript": "^2.7.3",
+    "@graphql-codegen/typescript-operations": "^2.5.3",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "@rollup/plugin-typescript": "^8.0.0",
+    "@tsconfig/svelte": "^2.0.0",
+    "babel-core": "6.26.3",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.23.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "graphql-codegen-svelte-apollo": "^1.1.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "node-sass": "^7.0.1",
+    "prettier": "^2.7.1",
+    "prettier-plugin-svelte": "^2.7.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0",
+    "svelte-check": "^2.0.0",
+    "svelte-preprocess": "^4.0.0",
+    "tslib": "^2.0.0",
+    "typescript": "^4.0.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "autoprefixer": "^10.4.8",
+    "babel-eslint": "^10.1.0",
+    "elizabot": "^0.0.3",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "postcss": "^8.4.16",
+    "sass": "^1.54.6",
+    "sirv-cli": "^2.0.0"
+  }
+}
